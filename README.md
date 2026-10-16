@@ -14,7 +14,7 @@ No framework, build, JavaScript, installation, account, media file, analytics, o
 
 ## Review before publication
 
-1. Supply the operator's appropriate public identity and a real privacy/support contact. No name, email address, postal address, jurisdiction, or company details have been invented. Review any legally required publisher details for the operator's situation.
+1. The public privacy/support contact is `dinor1201@gmail.com`, explicitly provided for publication by the operator. A legal operator identity has not been supplied; check whether further publisher identification is required for the operator's situation. No name, postal address, jurisdiction, or company details have been invented.
 2. Confirm the text against the actual software. OAuth, `video.upload`, token storage, revocation, and disconnect controls are explicitly future work. Do not label them implemented until they are.
 3. Before enabling integration or accepting other users, decide and document the applicable legal basis, retention, credential protections, deletion process, and rights/contact procedure. There is no implemented guarantee of encrypted token storage or automatic deletion.
 4. Review platform naming and branding rules: the current project name contains platform names. The site uses no platform logos or approval badges.
@@ -24,7 +24,7 @@ No framework, build, JavaScript, installation, account, media file, analytics, o
 
 The current official review criteria exclude private/personal apps and apps still in development from production approval. A website alone does not resolve this eligibility issue. Preserve the truthful project description; do not claim public availability or completion merely to satisfy a review. Check naming rules and approved testing options with TikTok before a submission.
 
-Official references checked for this draft on 16 October 2026:
+Official references last checked on 16 October 2026:
 
 - [App review criteria](https://developers.tiktok.com/docs/en/app-review-guidelines)
 - [Video upload without automatic posting](https://developers.tiktok.com/docs/en/content-posting-api-reference-upload-video)
@@ -45,26 +45,28 @@ No upload or publication has been performed for you.
 
 Official [GitHub Pages publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-For a standard project site, the three URLs will follow this pattern. Replace `YOUR-USERNAME` with the actual repository owner; no username has been assumed:
+After deployment, copy the exact HTTPS site address from **Settings > Pages** for the overview. Open the Terms and Privacy links on that deployed page and copy their full URLs. Their paths under the site address are:
 
-- Overview: `https://YOUR-USERNAME.github.io/twitch-clips-site/`
-- Terms: `https://YOUR-USERNAME.github.io/twitch-clips-site/terms.html`
-- Privacy: `https://YOUR-USERNAME.github.io/twitch-clips-site/privacy.html`
+- Overview: the site root (`index.html`).
+- Terms: `terms.html`.
+- Privacy: `privacy.html`.
+
+The account name and final published address have not been assumed or inserted as placeholders.
 
 Use GitHub's displayed URL if the account or repository has a different Pages configuration. Domain/URL verification, any necessary developer access, and OAuth configuration are separate tasks, not provided by this website.
 
 ## Publication safety
 
-Upload only this site's five files. Never copy videos, audio, transcripts, annotations, account data, `.env` files, credentials, private keys, model weights, or the desktop project source into the public repository. This site contains no local personal paths or private contact details. Do not create a link to a private media directory.
+Upload only this site's five files. Never copy videos, audio, transcripts, annotations, account data, `.env` files, credentials, private keys, model weights, or the desktop project source into the public repository. The only published contact detail is the email address explicitly authorised above. This site contains no local personal paths or other private contact details. Do not create a link to a private media directory.
 
 There is no site-authored data collection. GitHub Pages itself logs IP addresses for security; the Privacy Policy discloses that hosting distinction. External links load only when a visitor chooses them.
 
 ## Local validation completed
 
 - Internal page links, stylesheet links, fragment targets, unique IDs, English language tags, viewport metadata, and one main heading per page checked.
-- No scripts, forms, embedded media, browser storage, remote stylesheet/font/image requests, credentials, personal contact details, or personal filesystem paths included in the five files.
-- Actual isolated Chrome rendering checked: overview at 320, 390, 768, and 1440 CSS pixels wide; Terms and Privacy at 390 pixels. Navigation remains visible and all checked pages fit horizontally without overflow.
-- Mobile screenshots of the overview and Privacy Policy and a full desktop overview were visually inspected. This is browser viewport emulation, not a test on a physical iPhone.
+- No scripts, forms, embedded media, browser storage, remote stylesheet/font/image requests, credentials, personal filesystem paths, or personal contact details other than the explicitly authorised contact email included in the five files.
+- Contact update verified in isolated Chrome: all three pages at 320, 390, and 1440 CSS pixels wide. Navigation remains visible, contact links have the authorised text and mailto target, and all checked pages fit horizontally without overflow.
+- Mobile contact sections in Terms and Privacy were visually inspected after scrolling to the address. Earlier overview/desktop screenshots were also reviewed. This is browser viewport emulation, not a test on a physical iPhone.
 - No site publication, repository push, account login, API integration, or change to the desktop project was performed.
 
 Retest the deployed HTTPS URLs after manual publication; local rendering does not prove GitHub Pages deployment or TikTok approval.
